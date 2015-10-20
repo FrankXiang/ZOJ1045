@@ -9,7 +9,14 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    float n;
+    while(scanf("%f",&n) &&n !=0.00){
+        float sum = 0.00;
+        int i;
+        for(i=2;sum<=n;i++){
+            sum+=1.0/i;
+        }
+        printf("%d card(s)\n",i-2);
+    }
     return 0;
 }
